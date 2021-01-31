@@ -10,7 +10,7 @@ retryCount:3
 
 kafka:Producer kafkaProducer = new (prodConfig);
 
-listener http:Listener http_Listener = new (9090);
+
 
 type registereVoter record {
     int id;
@@ -20,3 +20,15 @@ type registereVoter record {
     string gender;
     int age;   
 };
+
+listener http:Listener http_Listener = new (9090);
+    
+@http:ServiceConfig{
+    basePath: "/add"
+}
+
+service add on http_Listener {
+
+    @http:ResourceConfig {  path: "/voters/{name}"  } 
+    
+    }
