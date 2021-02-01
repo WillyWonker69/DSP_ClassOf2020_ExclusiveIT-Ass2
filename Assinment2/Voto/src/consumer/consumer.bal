@@ -13,12 +13,21 @@ kafka:ConsumerConfiguration consumerConfig ={
     valueDeserializerType:kafka:DES_STRING,
     autoCommit:false
 };
-
+public type  registeredVoter record {
+    int id;
+    string fullName;
+    boolean citizenship;
+    string gender;
+    int age;
+};
 
 listener kafka:Consumer consumer = new (consumerConfig);
 
 service kafkaService on consumer {
     resource function onMessage(kafka:Consumer kc, kafka:ConsumerRecord[] records){
+       
+       
+       
         foreach var rec in records {
             processRecord(rec);
         }
@@ -31,14 +40,17 @@ service kafkaService on consumer {
     }
 }
 
-function processRecord(kafka:ConsumerRecord rec) {
-    anydata msgVal = rec.value;
+    function processRecord(kafka:ConsumerRecord rec) {
 
-if(msgVal is string) {
-    io:println("Nice");
-} else {
-    io:println("Shit, -> ", msgVal);
-}
+        // anydata msgVal = rec. ;
+        // io:println(rec);
 
+        // registeredVoter voterDetails
 
-}
+        // Array storing the records of registered voters
+        kafka:ConsumerRecord []  storedApprovedVoters = [];
+        storedApprovedVoters.push(rec);
+        io:println("This is the stored Record: \n",storedApprovedVoters.toString());
+
+    }
+

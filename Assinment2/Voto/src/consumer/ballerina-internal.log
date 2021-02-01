@@ -1,0 +1,45 @@
+[2021-02-01 01:24:50,497] SEVERE {b7a.log.crash} - java.util.ConcurrentModificationException 
+error: java.util.ConcurrentModificationException message=KafkaConsumer is not safe for multi-threaded access
+	at ballerina.kafka:stop(consumer.bal:671)
+	   ballerina.kafka.Consumer:__gracefulStop(consumer.bal:223)
+	   .<stop>(.:18) 
+[2021-02-01 01:37:35,895] SEVERE {b7a.log.crash} - java.util.ConcurrentModificationException 
+error: java.util.ConcurrentModificationException message=KafkaConsumer is not safe for multi-threaded access
+	at ballerina.kafka:stop(consumer.bal:671)
+	   ballerina.kafka.Consumer:__gracefulStop(consumer.bal:223)
+	   .<stop>(.:24) 
+[2021-02-01 03:14:20,561] SEVERE {b7a.log.crash} - java.util.ConcurrentModificationException 
+error: java.util.ConcurrentModificationException message=KafkaConsumer is not safe for multi-threaded access
+	at ballerina.kafka:stop(consumer.bal:671)
+	   ballerina.kafka.Consumer:__gracefulStop(consumer.bal:223)
+	   .<stop>(.:24) 
+[2021-02-01 04:21:49,798] SEVERE {b7a.log.crash} - java.util.ConcurrentModificationException 
+error: java.util.ConcurrentModificationException message=KafkaConsumer is not safe for multi-threaded access
+	at ballerina.kafka:stop(consumer.bal:671)
+	   ballerina.kafka.Consumer:__gracefulStop(consumer.bal:223)
+	   .<stop>(.:24) 
+[2021-02-01 04:27:59,794] SEVERE {b7a.log.crash} - java.util.ConcurrentModificationException 
+error: java.util.ConcurrentModificationException message=KafkaConsumer is not safe for multi-threaded access
+	at ballerina.kafka:stop(consumer.bal:671)
+	   ballerina.kafka.Consumer:__gracefulStop(consumer.bal:223)
+	   .<stop>(.:24) 
+[2021-02-01 04:29:48,548] SEVERE {b7a.log.crash} - java.util.ConcurrentModificationException 
+error: java.util.ConcurrentModificationException message=KafkaConsumer is not safe for multi-threaded access
+	at ballerina.kafka:stop(consumer.bal:671)
+	   ballerina.kafka.Consumer:__gracefulStop(consumer.bal:223)
+	   .<stop>(.:24) 
+[2021-02-01 04:48:26,041] SEVERE {b7a.log.crash} - java.util.ConcurrentModificationException 
+error: java.util.ConcurrentModificationException message=KafkaConsumer is not safe for multi-threaded access
+	at ballerina.kafka:stop(consumer.bal:671)
+	   ballerina.kafka.Consumer:__gracefulStop(consumer.bal:223)
+	   .<stop>(.:24) 
+[2021-02-01 05:04:02,894] SEVERE {b7a.log.crash} - java.util.ConcurrentModificationException 
+error: java.util.ConcurrentModificationException message=KafkaConsumer is not safe for multi-threaded access
+	at ballerina.kafka:stop(consumer.bal:671)
+	   ballerina.kafka.Consumer:__gracefulStop(consumer.bal:223)
+	   .<stop>(.:24) 
+[2021-02-01 05:33:49,447] SEVERE {b7a.log.crash} - java.util.ConcurrentModificationException 
+error: java.util.ConcurrentModificationException message=KafkaConsumer is not safe for multi-threaded access
+	at ballerina.kafka:stop(consumer.bal:671)
+	   ballerina.kafka.Consumer:__gracefulStop(consumer.bal:223)
+	   .<stop>(.:24) 
